@@ -1,54 +1,90 @@
-# React + TypeScript + Vite
+# Ultrasound Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive educational web application that simulates ultrasound wave propagation through different tissue types, demonstrating key principles of medical ultrasound physics.
 
-Currently, two official plugins are available:
+![Ultrasound Simulator](https://github.com/AliMoamen/ultrasound-simulator/raw/main/screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 Features
 
-## Expanding the ESLint configuration
+- **Interactive Simulation:** Visualize ultrasound waves traveling through multiple tissue layers
+- **Real-time Parameter Adjustment:** Change frequency, power, and tissue layers to see immediate effects
+- **Physics-based Calculations:** Accurate representation of:
+  - Penetration depth based on frequency, attenuation, and power
+  - Wave reflection at tissue interfaces based on acoustic impedance
+  - Wavelength and axial resolution
+  - Sound speed and round-trip time
+- **Educational Content:** Detailed information about:
+  - Tissue properties (speed of sound, density, attenuation)
+  - Formulas used in ultrasound physics
+  - Core concepts and clinical relevance
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🔧 Technologies
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React** + **TypeScript** + **Vite**
+- **Tailwind CSS** for styling
+- **shadcn/ui** component library
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or newer)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/AliMoamen/ultrasound-simulator.git
+cd ultrasound-simulator
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Install dependencies
+```bash
+npm install
+# or 
+yarn
 ```
+
+3. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open your browser to `http://localhost:5173`
+
+## 📚 Educational Use
+
+This simulator is designed for:
+- Medical students learning ultrasound principles
+- Sonography and radiology training
+- Physics education related to wave propagation
+- Anyone interested in understanding how medical ultrasound works
+
+## 🧠 The Science Behind It
+
+The simulator models several key aspects of ultrasound physics:
+
+1. **Frequency and Penetration Depth**: Higher frequencies provide better resolution but less penetration.
+2. **Acoustic Impedance**: Product of tissue density and speed of sound, determines reflection at interfaces.
+3. **Attenuation**: How quickly ultrasound energy is lost in tissue.
+4. **Axial Resolution**: The minimum distance needed to distinguish two objects along the beam axis.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit a pull request or open an issue for:
+- Bug reports
+- Feature suggestions
+- Educational content improvements
+- Code optimizations
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- Inspired by principles of medical physics education
+- Built with React and modern web technologies
