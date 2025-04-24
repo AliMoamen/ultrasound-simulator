@@ -2,7 +2,7 @@
 
 An interactive educational web application that simulates ultrasound wave propagation through different tissue types, demonstrating key principles of medical ultrasound physics.
 
-![Ultrasound Simulator](https://github.com/AliMoamen/ultrasound-simulator/raw/main/screenshot.png)
+![Ultrasound Simulator](https://github.com/AliMoamen/ultrasound-simulator/blob/master/raw/main/screenshot.png)
 
 ## 🔍 Features
 
